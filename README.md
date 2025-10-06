@@ -25,4 +25,79 @@ This project uses **deep learning models (LSTM and MLP)** trained on perinatal, 
 ---
 
 ## 🧩 Project Structure
+├── newborn-risk-level-prediction.ipynb # Main Jupyter notebook (data processing + model training)
+├── newborn_health_lstm.h5 # Trained LSTM model
+├── newborn_health_mlp.h5 # Trained MLP model
+├── newborn_health_lstm.h5.png # Model training performance visualization (LSTM)
+├── newborn_health_mlp.h5.png # Model training performance visualization (MLP)
+└── README.md # Project documentation
+
+
+---
+
+## 🧠 Model Details
+
+### 1. **LSTM Model**
+- Captures **temporal patterns** in neonatal vital signs and perinatal sequences.
+- Built using **TensorFlow/Keras**.
+- Ideal for time-series neonatal monitoring data.
+
+### 2. **MLP Model**
+- Uses **structured tabular features** like maternal history, delivery data, and birth metrics.
+- Provides a fast, interpretable risk estimation.
+
+---
+
+## 🧪 Workflow
+
+1. **Data Preprocessing**
+   - Handle missing values, normalize features, encode categorical data.
+2. **Model Training**
+   - Train LSTM and MLP models separately.
+   - Save best models as `.h5` files.
+3. **Model Evaluation**
+   - Evaluate using AUC, accuracy, F1-score, and confusion matrix.
+4. **Prediction**
+   - Predict newborn risk level: `Low`, `Moderate`, or `High`.
+5. **Visualization**
+   - Plot training curves and feature importance graphs.
+
+---
+
+## ⚙️ Technologies Used
+
+| Category | Tools / Libraries |
+|-----------|-------------------|
+| Programming | Python 3.x |
+| ML Frameworks | TensorFlow / Keras, Scikit-learn |
+| Data Handling | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn |
+| Model Explainability | SHAP |
+| Environment | Jupyter Notebook |
+
+---
+
+## 💡 Future Improvements
+
+- Integrate real-time monitoring data (vitals, oxygen saturation, etc.)
+- Add a **web dashboard** using FastAPI + Streamlit for visualization.
+- Apply **federated learning** for multi-hospital training.
+- Perform **clinical validation** and deploy as an assistive tool in neonatal units.
+
+---
+
+## 🧬 Ethical & Privacy Considerations
+
+- All data used must be **de-identified** to ensure patient privacy.  
+- Models should support **explainability** and **human-in-the-loop** decision-making.  
+- Intended only for **research and educational** purposes, not direct clinical use.
+
+---
+
+## 🏁 Getting Started
+
+### 🔧 Prerequisites
+Install dependencies:
+```bash
+pip install tensorflow scikit-learn pandas numpy matplotlib seaborn 
 
