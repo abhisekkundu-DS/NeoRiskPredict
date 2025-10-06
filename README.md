@@ -24,14 +24,6 @@ This project uses **deep learning models (LSTM and MLP)** trained on perinatal, 
 
 ---
 
-## 🧩 Project Structure
-├── newborn-risk-level-prediction.ipynb # Main Jupyter notebook (data processing + model training)
-├── newborn_health_lstm.h5 # Trained LSTM model
-├── newborn_health_mlp.h5 # Trained MLP model
-├── newborn_health_lstm.h5.png # Model training performance visualization (LSTM)
-├── newborn_health_mlp.h5.png # Model training performance visualization (MLP)
-└── README.md # Project documentation
-
 
 ---
 
@@ -72,7 +64,6 @@ This project uses **deep learning models (LSTM and MLP)** trained on perinatal, 
 | ML Frameworks | TensorFlow / Keras, Scikit-learn |
 | Data Handling | Pandas, NumPy |
 | Visualization | Matplotlib, Seaborn |
-| Model Explainability | SHAP |
 | Environment | Jupyter Notebook |
 
 ---
